@@ -1,0 +1,750 @@
+.header {
+    background-image: url("../img/header.jpg");
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.center {
+    width: 1200px ;
+    margin: 0 auto;
+}
+/* 顶部导航栏 */
+.top {
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+/* 导航栏左侧 */
+.top_contain {
+    display: flex;
+    justify-content: space-between;
+}
+.top_contain ul li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 400;
+    line-height: 3rem;
+    cursor: pointer;
+}
+.top_contain ul li:hover,
+.top_contain>div>p:hover {
+    color: rgb(66, 133, 244);
+}
+.top_contain>div>p {
+    color: white;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin: 0;
+}
+/* 导航栏右侧个人信息 */
+.infor {
+    position: relative;
+}
+.infor_card {
+    background-color: snow;
+    width: 200px;
+    height: 60px;
+    position: absolute;
+    border: 1px solid #ebeef5;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    padding: 0.6rem;
+    box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+    border-radius: 8px;
+    display: none;
+}
+.infor_card p {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+.triangle {
+    position: absolute;
+    top: -31px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 20px solid transparent;
+    border-bottom-color: white;
+}
+.infor:hover .infor_card {
+    display: block;
+    transition: all 1s;
+}
+/* 中间背景 */
+.header>div {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 200px;
+    box-sizing: border-box;
+}
+.header>div>h1 {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-family: "幼圆";
+    font-weight: bold;
+}
+.cloumn{
+    float: left;
+}
+.container {
+    overflow: hidden;
+} 
+#main {
+    height: 250px;
+    margin: 0 300px 0 300px;
+} 
+#main-container{
+    width: 100%;
+}
+#main img {
+    width: 100%;
+    margin-top: 5px;
+}
+#left {
+    width: 300px;
+    margin-left: -100%;
+    padding: 0 20px 0 0;
+    box-sizing: border-box;
+}
+#right {
+    height: 250px;
+    width: 300px;
+    margin-left: -300px;
+    padding: 0 0 0 20px;
+    box-sizing: border-box;
+} 
+#left img,
+#right img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.banner {
+    margin-top: 40px;
+}
+.transbanner div {
+    width: 100%;
+    overflow: hidden;
+}
+.transbanner div:hover .bannerimgs{
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+/* 古风板块 */
+.topic {
+    width: 100%;
+    clear: both;
+    margin-top: 20px;
+}
+.topic .ancient {
+    display: inline-block;
+    width: 74%;
+    height: 620px;
+    overflow: hidden;
+}
+.img_div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.ancient h1 {
+    margin-bottom: 16px;
+}
+.ancient_img {
+    width: 46%;
+    margin-bottom: 15px;
+}
+.topic .ancient  div img {
+    width: 100%;
+}
+.topic .ancient_reco {
+    display: inline-block;
+    width: 25%;
+    box-sizing: border-box;
+    height: 620px;
+    overflow: hidden;
+}
+/* 遮罩层 */
+.ancient_img {
+    position: relative;
+    overflow: hidden;
+}
+.ancient_img h2 {
+    color: rgba(255,255,255,0.8);
+    margin: 0 0 5px 0;
+}
+.ancient_img p {
+    color: white;
+}
+.ancient_img div {
+    padding: 4px;
+    position: absolute;
+    bottom: -65px;
+    background-color: rgba(0, 0,0, 0.4);
+    height: 100px;
+}
+.ancient_img:hover .mask{
+    bottom: 0px;
+    transition: all 0.4s;
+}
+/* 话题排行榜 */
+.ancient_reco h3 {
+    text-align: center;
+    margin-bottom: 8px;   
+    margin-top: 26px;
+}
+.hot {
+    padding: 0 27px 0 27px;
+}
+.hot .hot_div {
+    width: 100%;
+    position: relative;
+}
+.hot .hot_div img {
+    width: 100%;
+}
+.hot .hot_div .middle {
+    width: 68%;
+    height: 116px;
+    border: 2px solid white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 106px;
+}
+.hot .hot_div .middle p{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+.icon_circle {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(244,186,102);
+    border-radius: 50%;
+    position: absolute;
+    top: -17px;
+    left: 17px;
+    font-size: 12px;
+}
+.icon_circle h1 {
+    color: white;
+    text-align: center;
+    font-family: fangsong;
+    font-weight: bold;
+}
+.ikon_img div {
+    overflow: hidden;
+    width: 100%;
+}
+.ikon_img div:hover .icon_img{
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+/* 单个插画 */
+.hot_ikon {
+    width: 100%;
+    margin-top: 21px;
+    position: relative;
+}
+.hot_ikon .ikon_img {
+    width: 50%;
+    display: inline-block;
+    overflow: hidden;
+    height: 100%;
+}
+.hot_ikon .ikon_img img {
+    width: 100%;
+}
+.hot_ikon .ikon_content {
+    width: 48%;
+    display: inline-block;
+    overflow: hidden;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+.hot_ikon .ikon_content p:nth-child(1){
+    font-size: 20px;
+    font-weight: 600;
+ }
+ .hot_ikon .ikon_content p{
+    font-size: 14px;
+    margin-top: 8px;
+ }
+ /* 单个活动板块 */
+ .event h1 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 89%;
+    display: inline-block;
+ }
+ .event a {
+    color: black;
+    width: 10%;
+ }
+ .event a p{
+    display: inline-block;
+    line-height: 20px;
+    overflow: hidden;
+    cursor: pointer;
+ }
+ .event a p:hover{
+    color: rgb(66, 133, 244);
+ }
+ .plate_one {
+     width: 20%;
+     background-color: white;
+     box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+     border-radius: 8px;
+     display: inline-block;
+     margin: 5px 72px 0 0px;
+ }
+#plate_four{
+     margin-right: 0;
+ }
+ .plate_one .plate_img img {
+     width: 100%;
+ }
+ .plate_one .plate_img{
+     overflow: hidden;
+ }
+ .plate_one .plate_content p:nth-child(1){
+     color: black;
+     font-weight: 400;
+     font-size: 16px;
+     white-space: nowrap;
+     text-overflow: ellipsis;
+     overflow: hidden;
+ }
+ .plate_one .plate_content p:nth-child(2){
+    font-size: 12px;
+    color: #bbb;
+    margin-bottom: 17px;
+}
+.plate_one .plate_author img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    overflow: hidden;
+}
+.plate_one .plate_author p{
+    display: inline-block;
+    overflow: hidden;
+}
+.plate_one .plate_author,
+.plate_one .plate_content{
+    padding: 4px;
+    box-sizing: border-box;
+}
+/* 单个过度动画 */
+.plate_one:hover .activity {
+    transform: scale(1.1);
+    transition: all 0.6s;
+}
+.plate_one:hover {
+    /* transform: translateY(-10px); */
+    box-shadow: 0 -3px 23px  0 rgba(64,158,255,0.3);
+    transition: all 0.8s;
+}
+/* 达人排行榜 */
+.talent {
+    width: 100%;
+    height: 200px;
+    background-color: rgba(0,0,0,0.6);
+    margin-top: 40px;
+    padding: 10px 0;
+}
+.talent_div h2{
+    text-align: center;
+    color: white;
+}
+.all_talent {
+    margin-top: 44px;
+    padding: 3px;
+    display: flex;
+    justify-content: space-around;
+}
+.all_talent .talent_one {
+    width: 20%;
+    height: 100px;
+    background-color: white;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 20px 5px 0 11px;
+    box-sizing: border-box;
+}
+.all_talent .talent_one:nth-child(2){
+    margin-top: -20px;
+}
+.all_talent .talent_one .talent_img {
+    display: inline-block;
+    position: relative;
+}
+.all_talent .talent_one .talent_img .talent_header {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.all_talent .talent_one .talent_img .talent_crown {
+    position: absolute;
+    top: -15px;
+    left: -9px;
+}
+.all_talent .talent_one .talent_img .talent_crown_tow{
+    position: absolute;
+    top: -18px;
+    left: 17%;
+}
+.all_talent .talent_one .talent_img .talent_crown_three{
+    position: absolute;
+    top: -14px;
+    left: 27px;
+}
+.all_talent .talent_one .talent_content {
+    display: inline-block;
+    width: 74%;
+    overflow: hidden;
+}
+.talent_one:hover {
+    box-shadow: 0 -3px 23px 0 rgb(64 158 255 / 30%);
+    transform: translateY(-10px);
+    transition: all 0.5s;
+}
+/* 古风社区 */
+.custom h1{
+    margin: 20px 0;
+}
+.custom_imgs{
+    width: 100%;
+    display: flex;
+}
+.custom_imgs div {
+    flex: 1;
+}
+.custom_imgs div:hover{
+    flex: 2;
+    transition: all 0.3s;
+}
+.img_one{
+    background-image: url("../img/ancient/b.jpg");
+    width: 20%;
+    background-size: 100%;
+    height: 363px;
+    display:inline-block;
+    background-size: cover;
+}
+.img_tow{
+    background-image: url("../img/ancient/c.jpg");
+    width: 20%;
+    background-size: 100%;
+    height: 363px;
+    display:inline-block;
+    background-size: cover;
+}
+.img_three{
+    background-image: url("../img/ancient/d.jpg");
+    width: 20%;
+    background-size: 100%;
+    height: 363px;
+    display:inline-block;
+    background-size: cover;
+}
+.img_four{
+    background-image: url("../img/ancient/h.jpg");
+    width: 20%;
+    background-size: 100%;
+    height: 363px;
+    display:inline-block;
+    background-size: cover;
+}
+.img_five{
+    background-image: url("../img/ancient/i.jpg");
+    width: 20%;
+    background-size: 100%;
+        height: 363px;
+    display:inline-block;
+    background-size: cover;
+}
+/* 底部位置 */
+.footer {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    margin-top: 40px;
+    text-align: center;
+}
+.foot {
+    color: white;
+    position: relative;
+    padding: 10px;
+}
+.foot p{
+    margin: 10px;
+}
+
+
+@media screen and (min-width: 1005px) and (max-width: 1250px) {
+    .center {
+        width: 1000px;
+    }
+    #main {
+        margin: 0 250px 0 250px;
+    } 
+    #main img {
+        width: 100%;
+    }
+    #left {
+        width: 250px;
+        margin-left: -100%;
+    }
+    #right {
+        height: 250px;
+        width: 250px;
+        margin-left: -250px;
+    } 
+    .hot_ikon .ikon_content p:nth-child(1) {
+        font-size: 14px;
+    }
+    .hot_ikon .ikon_content p {
+        margin-bottom: 8px;
+    }
+    .hot_ikon .ikon_content {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        float: right;
+    }
+    .hot .hot_div .middle p {
+        font-size: 17px;
+    }
+    .hot .hot_div .middle {
+        height: 68px;
+        line-height: 68px;
+    }
+    .plate_one {
+        margin: 5px 60px 0 0px;
+    }
+    /* 达人排行榜字体 */
+    .letter {
+        font-size: 16px;
+    }
+    .all_talent .talent_one .talent_content {
+        width: 68%;
+    }
+} 
+@media screen and (min-width: 720px) and (max-width: 1004px) { 
+    .center {
+        width: 700px;
+    }
+    .cloumn{
+        float: none;
+    } 
+    .container {
+        padding: 0 10% 0 10%;
+        box-sizing: border-box;
+    }
+    #main-container {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+        overflow: hidden;
+    }
+    #main:hover .centerimg{
+        transform: scale(1.1);
+        transition: all 0.3s;
+    }
+    #main {
+        margin: 0;
+        height: auto;
+    } 
+    #main img {
+        width: 100%;
+    }
+    #left {
+        margin-left:0;
+        padding: 0 ;
+        width:  100%;
+        box-sizing: border-box;
+    }
+    #right {
+        margin-left: 0;
+        padding: 0;
+        width:  100%;
+        box-sizing: border-box;
+        height: auto;
+    } 
+    #left img,
+    #right img {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    /* 宠物社区 */
+    .topic .ancient {
+        display: block;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    .topic .ancient_reco {
+        display: inline-block;
+        width: 100%;
+        box-sizing: border-box;
+        height: auto;
+        overflow: hidden;
+    }
+    .hot {
+        padding: 0 15% 0 15%;
+    }
+    .hot_ikon .ikon_content {
+        height: 140px;
+    }
+    /* 最新活动 */
+    .plate_one {
+        width: 37%;
+        background-color: white;
+        box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+        border-radius: 8px;
+        display: inline-block;
+        margin: 5px 87px 22px 0px;
+    }
+    /* 达人排行榜 */
+    .all_talent .talent_one .talent_content {
+        display: inline-block;
+        width: 53%;
+        overflow: hidden;
+    }
+} 
+@media screen and  (max-width: 720px) { 
+    .center {
+        width: 420px;
+    }
+    .infor {
+        right: 70px;
+    }
+    /* 精彩呈现 */
+    .cloumn{
+        float: none;
+    } 
+    .container {
+        padding: 0 10% 0 10%;
+        box-sizing: border-box;
+    }
+    #main-container {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+        overflow: hidden;
+    }
+    #main:hover .centerimg{
+        transform: scale(1.1);
+        transition: all 0.3s;
+    }
+    #main {
+        margin: 0;
+        height: auto;
+    } 
+    #main img {
+        width: 100%;
+    }
+    #left {
+        margin-left:0;
+        padding: 0 ;
+        width:  100%;
+        box-sizing: border-box;
+    }
+    #right {
+        margin-left: 0;
+        padding: 0;
+        width:  100%;
+        box-sizing: border-box;
+        height: auto;
+    } 
+    #left img,
+    #right img {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    /* 宠物社区 */
+    .img_div {
+        width: 100%;
+        display: block;
+        padding: 0 10% 0 10%;
+        box-sizing: border-box;
+    }
+    .ancient_img {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .topic .ancient {
+        display: block;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    .topic .ancient_reco {
+        display: inline-block;
+        width: 100%;
+        box-sizing: border-box;
+        height: auto;
+        overflow: hidden;
+    }
+    .hot {
+        padding: 0 15% 0 15%;
+    }
+    .hot_ikon .ikon_content {
+        height: 100px;
+    }
+    /* 最新活动 */
+    .event_plate{
+        padding: 0 10% 0 10%
+    }
+    .plate_one {
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+        border-radius: 8px;
+        display: inline-block;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    /* 达人排行榜 */
+    .talent{
+        height: 400px;
+    }
+    .all_talent {
+        margin-top: 44px;
+        padding: 0 10%;
+        display: flex;
+        flex-direction: column;
+    }
+    .all_talent .talent_one .talent_content {
+        display: inline-block;
+        width: 53%;
+        overflow: hidden;
+    }
+    .all_talent .talent_one:nth-child(2) {
+        order: 1;
+    }
+    .all_talent .talent_one:nth-child(1) {
+        order: 2;
+    }
+    .all_talent .talent_one:nth-child(3) {
+        order: 3;
+    }
+    .all_talent .talent_one {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

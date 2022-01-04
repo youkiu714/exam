@@ -1,0 +1,36 @@
+html {
+    font-size: 16px;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+ul li{
+    list-style: none;
+}
+p,
+h2,
+h1,
+h3,
+h4{
+    cursor: default;
+    letter-spacing: 1px;
+    margin: 0;
+}
+ul,
+p{
+    margin: 0;
+}
+a {
+    outline: none;
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: rgb(66, 133, 244);
+}
+.letter {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

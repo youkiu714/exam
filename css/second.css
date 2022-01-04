@@ -1,0 +1,143 @@
+.activity {
+    background-color: #F4F4F4;
+    padding-top: 20px;
+}
+.center {
+    width: 80%;
+    margin: 0 auto;
+    min-width: 900px;
+    /* background-color: white;
+    box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%); */
+    padding: 10px;
+}
+.sheet {
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #f0f0f0;
+    background-color: white;
+    box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    cursor: default;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+.sheet table thead th {
+    border-bottom:  2px solid #f0f0f0;
+    padding: 22px 20px;
+}
+.sheet table tbody td {
+    border-bottom:  2px solid #f0f0f0;
+    padding: 10px 20px;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.sheet table tbody tr:hover {
+    background-color: #f5f7fa;
+    transition: background-color .25s ease;
+}
+.all {
+    width: 100%;
+    padding: 0 20px;
+    overflow: hidden;
+}
+.one {
+    width: 48%;
+    background: #ffffff;
+    /* background-color: #F4F4F4; */
+    float: left;
+    margin: 20px 1%;
+    overflow: hidden;
+}
+.one img {
+    width: 100%;
+}
+.one:hover .one_img{
+    filter: alpha(opacity=80);
+    -moz-opacity: .8;
+    opacity: .8;
+    -khtml-opacity: .8;
+    -webkit-transition: all .1s linear;
+    transition: all .1s linear;   
+}
+.one .one_content {
+    margin: 20px 0;
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.one .one_content .signal{
+    background: #ffba00;
+    float: right;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 20px;
+    color: #ffffff;
+    position: absolute;
+    right: -8px;
+    top: 12px;
+}
+.one .one_content .signal::before{
+    content: "";
+    display: block;
+    position: absolute;
+    border-right: none;
+    border: 16px solid transparent;
+    border-left: 10px solid #ffffff;
+    left: 0;
+}
+.one .one_content p:nth-child(1){
+    vertical-align: middle;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 324px;
+}
+.one .one_content p:nth-child(2){
+    height: 21px;
+    padding-top: 14px;
+    color: #aaaaaa;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: text;
+}
+.btn {
+    position: fixed;
+    top: 40px;
+    background-color: #F4F4F4;
+    padding: 3px 10px;
+    border: 2px solid #ffba00;;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.btn p,
+.btn div{
+    display: inline-block;
+    overflow: hidden;
+}
+.btn_div {
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/second/fanhui.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.btn p {
+    height: 30px;
+    font-size: 17px;
+    margin-right: 4px;
+    font-weight: 500;
+}
+.btn:hover{
+    background-color: #ffba00;
+    color: white;
+    transition: all 0.3s;
+}
+.btn:hover .btn_div{
+    background-image: url("../img/second/white.png");
+}
